@@ -124,6 +124,15 @@ table{
     }
 
     thead tr{
-        position:
+        position:absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        position: relative;
     }
 }
