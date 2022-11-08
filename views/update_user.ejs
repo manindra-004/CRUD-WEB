@@ -21,37 +21,37 @@
                         <div class="new_user">
                          <div class="form-group">
                              <label for="name"class="text-light">Name</label>
-                             <input type="hidden" name="id" value="">
-                             <input type="text" name="name" value="" placeholder="Manindra">
+                             <input type="hidden" name="id" value="<%= user._id %>">
+                             <input type="text" name="name" value="<%= user.name %>" placeholder="Manindra">
                          </div>
                          <div class="form-group">
-                             <label for="Email"class="text-light">Email</label>
-                             <input type="text" name="email" value="" placeholder="example@gmail.com">
+                             <label for="email"class="text-light">Email</label>
+                             <input type="text" name="email" value="<%= user.email %>" placeholder="example@gmail.com">
                          </div>
                          <div class="form-group">
-                             <label for="Age"class="text-light">Age</label>
-                             <input type="text" name="Age" value="" placeholder="20">
+                             <label for="age"class="text-light">Age</label>
+                             <input type="text" name="age" value="<%= user.age %>" placeholder="20">
                          </div>
                          <div class="form-group">
-                             <label for="Course"class="text-light">Course</label>
+                             <label for="course"class="text-light">Course</label>
                              <div class="radio inline">
-                                 <input type="radio" id="radio-2" name="Course" value="Web Development">
+                                 <input type="radio" id="radio-2" name="course" value="Web Development"<%= user.course == 'Web Development' ? 'checked':" %>>
                                  <label for="radio-2" class="radio-label">Web Development</label>
                              </div>
                              <div class="radio inline">
-                                 <input type="radio" id="radio-3" name="Course" value="Machine learning">
+                                 <input type="radio" id="radio-3" name="course" value="Machine learning"<%= user.course == 'Machine learning' ? 'checked':" %>>
                                  <label for="radio-3" class="radio-label">Machine learning</label>
                              </div>
                          </div>
          
                          <div class="form-group">
-                             <label for="Course"class="text-light">Status</label>
+                             <label for="course"class="text-light">Status</label>
                              <div class="radio inline">
-                                 <input type="radio" id="radio-4" name="status" value="Active">
+                                 <input type="radio" id="radio-4" name="status" value="Active"<%= user.course == 'Active' ? 'checked':" %>>
                                  <label for="radio-4" class="radio-label">Active</label>
                              </div>
                              <div class="radio inline">
-                                 <input type="radio" id="radio-5" name="status" value="Inactive">
+                                 <input type="radio" id="radio-5" name="status" value="Inactive"<%= user.course == 'Inactive' ? 'checked':" %>>
                                  <label for="radio-5" class="radio-label">Inactive</label>
                              </div>
                          </div>
